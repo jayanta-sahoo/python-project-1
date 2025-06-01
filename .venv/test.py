@@ -5,3 +5,5 @@ def test_function():
     assert os.path.exists('.venv'), "Virtual environment does not exist."
     assert os.path.isfile('.venv/test.py'), "Test file does not exist."
     print("All tests passed.")
+
+# want to write another function that will be used to test the above function
