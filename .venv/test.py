@@ -6,4 +6,9 @@ def test_function():
     assert os.path.isfile('.venv/test.py'), "Test file does not exist."
     print("All tests passed.")
 
-# want to write another function that will be used to test the above function
+# new function
+def new_function1():
+    print("This is a new function in the test file.")
+    assert os.path.exists('.venv'), "Virtual environment does not exist."
+    assert os.path.isfile('.venv/test.py'), "Test file does not exist."
+    print("New function test passed.")
