@@ -13,4 +13,16 @@ def new_function1():
     assert os.path.isfile('.venv/test.py'), "Test file does not exist."
     print("New function test passed.")
 
-x = 10;
+x = 10
+# new function to create
+def new_function2():
+    print("This is another new function in the test file.")
+    assert os.path.exists('.venv'), "Virtual environment does not exist."
+    assert os.path.isfile('.venv/test.py'), "Test file does not exist."
+    print("Another new function test passed.")
+
+if __name__ == "__main__":
+    test_function()
+    new_function1()
+    new_function2()
+    print("All functions executed successfully.")
