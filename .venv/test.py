@@ -12,3 +12,5 @@ def new_function1():
     assert os.path.exists('.venv'), "Virtual environment does not exist."
     assert os.path.isfile('.venv/test.py'), "Test file does not exist."
     print("New function test passed.")
+
+x = 10;
